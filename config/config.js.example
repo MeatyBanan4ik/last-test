@@ -1,0 +1,16 @@
+export default {
+	version: 1,
+	http: {
+		host: '::',
+		port: 3000,
+	},
+	db: 'mongodb://mongo:27017/last-test',
+	logger: {
+		appenders: {
+			console: { type: 'console' },
+		},
+		categories: {
+			default: { appenders: ['console'], level: 'all' },
+		},
+	},
+};

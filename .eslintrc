@@ -1,0 +1,48 @@
+{
+  "env": {
+    "commonjs": false,
+    "es6": true,
+    "node": true
+  },
+  "extends": ["airbnb-base", "prettier"],
+  "plugins": ["prettier"],
+  "parserOptions": {
+    "ecmaVersion": 2022
+  },
+  "rules": {
+    "import/no-unresolved": "off",
+    "class-methods-use-this": "off",
+    "func-names": ["error", "never"],
+    "global-require": "off",
+    "guard-for-in": "off",
+    "no-constructor-return": "off",
+    "no-bitwise": ["error", { "allow": ["~"] }],
+    "import/extensions": "off",
+    "import/no-extraneous-dependencies": "off",
+    "no-async-promise-executor": "off",
+    "no-await-in-loop": "off",
+    "no-case-declarations": "off",
+    "no-console": "off",
+    "no-new-func": "off",
+    "no-continue": "off",
+    "no-labels": ["error", { "allowLoop": true }],
+    "no-return-assign": "off",
+    "no-restricted-syntax": "off",
+    "no-shadow": "off",
+    "no-underscore-dangle": "off",
+    "no-unused-vars": ["error", { "argsIgnorePattern": "^_" }],
+    "no-useless-escape": "off",
+    "no-void": "off",
+    "prettier/prettier": [
+      "error",
+      {
+        "useTabs": true,
+        "tabWidth": 2,
+        "printWidth": 120,
+        "singleQuote": true,
+        "arrowParens": "avoid",
+        "trailingComma": "all"
+      }
+    ]
+  }
+}

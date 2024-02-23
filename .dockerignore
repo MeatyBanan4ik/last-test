@@ -1,0 +1,9 @@
+# git
+.git
+
+# dependencies
+/node_modules
+
+# ideas
+.idea/
+.vscode/
