@@ -11,4 +11,8 @@ export default class TaskHttpHandler {
 	async list(req, res) {
 		res._success({ data: await this.service.all() });
 	}
+
+	async listNode(req, res) {
+		res._success({ data: await this.service.allNode() });
+	}
 }

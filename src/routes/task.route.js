@@ -16,5 +16,6 @@ import TaskHttpHandler from '../handlers/http/task.http.handler.js';
 const router = Router();
 
 router.get('/', CallHttpHandler(TaskHttpHandler, 'list'));
+router.get('/node', CallHttpHandler(TaskHttpHandler, 'listNode'));
 
 export default router;

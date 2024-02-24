@@ -6,7 +6,9 @@
   "type": "module",
   "scripts": {
     "dev": "npx nodemon",
-    "start": "node ./src/index.js"
+    "start": "node ./src/index.js",
+    "seed": "node ./src/seeder.js",
+    "serve": "npm run seed && npm run start"
   },
   "author": "MeatyBanana",
   "dependencies": {

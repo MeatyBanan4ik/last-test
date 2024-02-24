@@ -8,4 +8,4 @@ RUN apk add make
 
 RUN make build
 
-CMD [ "yarn", "dev" ]
+CMD [ "yarn", "serve" ]
